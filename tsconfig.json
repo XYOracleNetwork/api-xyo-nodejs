@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.es.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": false
+  },
+  "include": ["src/**/*.ts", "src/**/*.json"],
+  "exclude": ["node_modules", "build", "dist", "src/**/*.spec.ts"]
+}
