@@ -17,10 +17,10 @@ provider:
   runtime: nodejs14.x
   versionFunctions: false
   environment:
-    MONGO_USERNAME: ${env:MONGO_USERNAME}
-    MONGO_PASSWORD: ${env:MONGO_PASSWORD}
-    MONGO_DOMAIN: ${env:MONGO_DOMAIN}
-    MONGO_DATABASE: ${env:MONGO_DATABASE}
+    ARCHIVIST_MONGO_USERNAME: ${env:ARCHIVIST_MONGO_USERNAME}
+    ARCHIVIST_MONGO_PASSWORD: ${env:ARCHIVIST_MONGO_PASSWORD}
+    ARCHIVIST_MONGO_DOMAIN: ${env:ARCHIVIST_MONGO_DOMAIN}
+    ARCHIVIST_MONGO_DATABASE: ${env:ARCHIVIST_MONGO_DATABASE}
 
   timeout: 29
 
@@ -52,17 +52,6 @@ custom:
         stage: ${opt:stage, 'dev'}
 
 functions:
-  block-post:
-    handler: src/archive/block/post/index.entryPoint
-    events:
-      - http:
-          path: /archive/{archive}/block
-          method: POST
-          cors: true
-      - http:
-          path: /archive/{archive}/bw
-          method: POST
-          cors: true
   block-sample:
     handler: src/archive/block/sample/get.entryPoint
     events:
