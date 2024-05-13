@@ -30,7 +30,7 @@
   "author": "Arie Trouw",
   "license": "ISC",
   "dependencies": {
-    "@xylabs/eslint-config": "^2.0.16",
+    "@xylabs/eslint-config": "^2.0.22",
     "@xyo-network/sdk-xyo-client-js": "^2.1.45",
     "@xyo-network/sdk-xyo-js": "^2.1.40",
     "@xyo-network/sdk-xyo-mongo-js": "^2.1.18",
