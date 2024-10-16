@@ -31,7 +31,7 @@
   "license": "ISC",
   "dependencies": {
     "@xylabs/eslint-config": "^2.0.16",
-    "@xyo-network/sdk-xyo-client-js": "^2.1.45",
+    "@xyo-network/sdk-xyo-client-js": "^2.20.15",
     "@xyo-network/sdk-xyo-js": "^2.1.40",
     "@xyo-network/sdk-xyo-mongo-js": "^2.1.18",
     "aws-lambda": "^1.0.6",
